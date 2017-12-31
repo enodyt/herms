@@ -4,7 +4,7 @@
 ##  The cookie needs to be configured prior to vm boot for
 ##  for read only filesystem.
 
--name herms@192.168.1.4
+-name firmware@192.168.1.4
 -setcookie secure
 
 ## Use Ctrl-C to interrupt the current shell rather than invoking the emulator's

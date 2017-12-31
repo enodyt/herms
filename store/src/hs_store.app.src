@@ -1,0 +1,20 @@
+{application, hs_store,
+ [{description, "An OTP application"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, { hs_store_app, []}},
+  {applications,
+   [kernel,
+    stdlib,
+    mnesia,
+    sumo_db,
+    ebus
+   ]},
+  {env,[]},
+  {modules, []},
+  {start_phases, [{create_schema, []}]},
+
+  {maintainers, []},
+  {licenses, []},
+  {links, []}
+ ]}.

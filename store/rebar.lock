@@ -1,0 +1,20 @@
+{"1.1.0",
+[{<<"ebus">>,{pkg,<<"erlbus">>,<<"0.2.1">>},0},
+ {<<"goldrush">>,{pkg,<<"goldrush">>,<<"0.1.9">>},1},
+ {<<"iso8601">>,{pkg,<<"iso8601">>,<<"1.2.3">>},1},
+ {<<"lager">>,{pkg,<<"lager">>,<<"3.5.2">>},0},
+ {<<"quickrand">>,{pkg,<<"quickrand">>,<<"1.5.4">>},2},
+ {<<"sumo_db">>,{pkg,<<"sumo_db">>,<<"0.7.6">>},0},
+ {<<"uuid">>,{pkg,<<"uuid_erl">>,<<"1.5.4">>},1},
+ {<<"worker_pool">>,{pkg,<<"worker_pool">>,<<"2.3.0">>},1}]}.
+[
+{pkg_hash,[
+ {<<"ebus">>, <<"7D976888A8F8F3583200D31494D4629D9796D5790ECF14A5DA6FBB9253106607">>},
+ {<<"goldrush">>, <<"F06E5D5F1277DA5C413E84D5A2924174182FB108DABB39D5EC548B27424CD106">>},
+ {<<"iso8601">>, <<"56D173EC568D42E95908797A9B7D27BCF0B377443277416733EB1A544A4A47C2">>},
+ {<<"lager">>, <<"614A8C8F67BF99B69EB264EA22121AD25511C055AAEC09B086773D5108C6767F">>},
+ {<<"quickrand">>, <<"47ADD4755CC5F209CBEFFD6F47C84061196CD7FAD99FD8FD12418EB0D06B939D">>},
+ {<<"sumo_db">>, <<"9E24E15914A8CCCAC3FED1675F4E25A1BFB747237151E618C0A387696FD70A41">>},
+ {<<"uuid">>, <<"06240EFF3EAF013CC22274689B0C1FF6345645EE5D47A9E4ED7545EEB7698B23">>},
+ {<<"worker_pool">>, <<"F401FD82A6A02333F4326B144A1EE759EEDEA20411F4283A3F3195BD62A2E445">>}]}
+].
