@@ -11,7 +11,7 @@ defmodule Herms.Thermometer.WebSocket do
 
   def websocket_init(_type, req, _opts) do
     state = %{}
-    :gproc.reg({:p, :l, @key})
+    :ebus.sub(self(), @key)
     {:ok, req, state}
   end
 
@@ -31,7 +31,7 @@ defmodule Herms.Thermometer.WebSocket do
   end
 
   def websocket_terminate(_reason, _req, _state) do
-    :gproc.unreg({:p, :l, @key})
+    :ebus.unsub(self(), @key)
     :ok
   end
 

@@ -38,7 +38,7 @@ defmodule Herms.Mixfile do
   end
   def application(_target) do
     [mod: {Herms.Application, []},
-     extra_applications: [:logger, :onewire_therm]]
+     extra_applications: [:logger, :onewire_therm, :ebus]]
   end
 
   # Dependencies can be Hex packages:
@@ -65,6 +65,7 @@ defmodule Herms.Mixfile do
       {:poison, "~> 3.1"},
       {:onewire_therm, github: "mokele/onewire_therm"},
       {:gproc, "~> 0.6.1"},
+      {:ebus, "~> 0.2.1", hex: :erlbus},
       {:logger_multicast_backend, "~> 0.2"},
     ] ++ system(target)
   end

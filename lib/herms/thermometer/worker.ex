@@ -50,7 +50,7 @@ defmodule Herms.Thermometer.Worker do
   ## -- helpers -------------------------------------------------------------
 
   def handle_reading(sensor, temp, state) do
-    :gproc.send({:p, :l, @key}, {@key, sensor, temp})
+    :ebus.pub(@key, {@key, sensor, temp})
     {:noreply, Map.put(state, sensor, temp)}
   end
 end
