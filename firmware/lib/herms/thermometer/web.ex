@@ -1,4 +1,4 @@
-defmodule Herms.Thermometer.Web do
+defmodule Herms.Firmware.Thermometer.Web do
 
   def init(_, req, state) do
     {:ok, req, state}
@@ -16,7 +16,7 @@ defmodule Herms.Thermometer.Web do
   end
 
   def to_html() do
-    temps = Herms.Thermometer.Worker.read()
+    temps = Herms.Firmware.Thermometer.Worker.read()
     """
       <!doctype html>
       <html> <head>

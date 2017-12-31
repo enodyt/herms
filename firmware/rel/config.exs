@@ -26,8 +26,8 @@ end
 # when running `mix release`, the first release in the file
 # will be used by default
 
-release :herms do
-  set version: current_version(:herms)
+release :hs_firmware do
+  set version: current_version(:hs_firmware)
   plugin Bootloader
   if System.get_env("NERVES_SYSTEM") do
     set dev_mode: false

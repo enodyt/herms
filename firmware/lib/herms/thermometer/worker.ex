@@ -1,9 +1,9 @@
-defmodule Herms.Thermometer.Worker do
+defmodule Herms.Firmware.Thermometer.Worker do
   use GenServer
 
   require Logger
 
-  @key {__MODULE__, :reading}
+  @key "therm_reading"
 
   @onewire   'w1'
   @mt_top    '28-0004314eb9ff'

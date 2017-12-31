@@ -9,7 +9,7 @@ use Mix.Config
 # to add files to the root filesystem or modify the firmware
 # archive.
 
-config :herms, interface: :eth0
+config :hs_firmware, interface: :eth0
 
 config :nerves, :firmware,
   fwup_conf: "config/fwup.conf"

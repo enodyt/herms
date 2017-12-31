@@ -1,7 +1,7 @@
-defmodule Herms.Thermometer.WebSocket do
+defmodule Herms.Firmware.Thermometer.WebSocket do
   @behaviour :cowboy_websocket_handler
 
-  @key {Herms.Thermometer.Worker, :reading} # gproc subscribe key
+  @key "therm_reading"
 
   require Logger
 

@@ -1,4 +1,4 @@
-defmodule Herms.Mixfile do
+defmodule Herms.Firmware.Mixfile do
   use Mix.Project
 
   @target System.get_env("MIX_TARGET") || "host"
@@ -10,7 +10,7 @@ defmodule Herms.Mixfile do
   """, :reset])
 
   def project do
-    [app: :herms,
+    [app: :hs_firmware,
      version: "0.1.0",
      elixir: "~> 1.4",
      target: @target,
@@ -37,7 +37,7 @@ defmodule Herms.Mixfile do
     [extra_applications: [:logger]]
   end
   def application(_target) do
-    [mod: {Herms.Application, []},
+    [mod: {Herms.Firmware.Application, []},
      extra_applications: [:logger, :onewire_therm, :ebus]]
   end
 
